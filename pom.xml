@@ -17,6 +17,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+		<!--<spring-cloud.version>Finchley.SR2</spring-cloud.version>-->
 	</properties>
 
 	<modules>
@@ -25,6 +27,7 @@
 		<module>spring-cloud-eureka</module>
 		<module>spring-cloud-dashboard</module>
 		<module>spring-cloud-turbine</module>
+		<module>spring-cloud-zuul</module>
 	</modules>
 
 
@@ -33,7 +36,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.SR2</version>
+				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
